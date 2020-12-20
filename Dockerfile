@@ -5,8 +5,8 @@ RUN yum install -y httpd \
     unzip \
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page261/parallo.zip /var/www/html/
 WORKDIR /var/www/html
-RUN unzip kindle.zip
-RUN cp -rvf markups-kindle/* .
-RUN rm -rf _MACOSX markups-kindle kindle.zip
+RUN unzip parallo.zip
+RUN cp -rvf markups-parallo/* .
+RUN rm -rf _MACOSX markups-parallo parallo.zip
 CMD [*/usr/sbin/httpd", "-D" , "FOREGROUND"]
 EXPOSE 80
