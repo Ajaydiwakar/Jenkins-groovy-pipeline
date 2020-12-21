@@ -9,3 +9,4 @@ RUN cp -rvf templatemo_534_parallo/* .
 RUN rm -rf templatemo_534_parallo parallo.zip
 CMD [*/usr/sbin/httpd", "-D" , "FOREGROUND"]
 EXPOSE 80
+
