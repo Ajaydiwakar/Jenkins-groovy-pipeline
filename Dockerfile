@@ -1,8 +1,7 @@
-FROM ubuntu:latest
+FROM centos:latest
 MAINTAINER diwakarajay44@gmail.com
-RUN apt update -y   && \
-    apt install apache2 && \
-    apt install unzip
+RUN yum install -y httpd && \
+    yum install -y unzip
 #RUN git clone https://github.com/Ajaydiwakar/transparent_login.git
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page261/parallo.zip /var/www/html/
 WORKDIR /var/www/html
