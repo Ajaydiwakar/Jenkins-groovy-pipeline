@@ -1,4 +1,4 @@
-# demo-project  
+# Project  -  Jenkins Groovy pipeline
 
 The second file you will find Jenkins Groovy script .Need to be placed under the jenkins job - pipeline script
 
