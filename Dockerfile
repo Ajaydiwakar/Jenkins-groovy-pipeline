@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 MAINTAINER diwakarajay44@gmail.com
-RUN apt install -y apache2 && \
-    apt install -y unzip
+RUN apt install apache2 && \
+    apt install unzip
 #RUN git clone https://github.com/Ajaydiwakar/transparent_login.git
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page261/parallo.zip /var/www/html/
 WORKDIR /var/www/html
